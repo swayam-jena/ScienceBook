@@ -1,0 +1,196 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% LaTeX book template                           %%
+%% Author:  Swayam Jena %%
+%% License: ISC license                          %%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\documentclass[a4paper,11pt]{book}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{lmodern}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Source: http://en.wikibooks.org/wiki/LaTeX/Hyperlinks %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\usepackagegrade{xcolor}
+\usepackage{hyperref}
+\usepackage{graphicx}
+\usepackage[english]{babel}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% 'dedication' environment: To add a dedication paragraph at the start of book %
+% Source: http://www.tug.org/pipermail/texhax/2010-June/015184.html            %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\newenvironment{dedication}
+{
+   \cleardoublepage
+   \thispagestyle{empty}
+   \vspace*{\stretch{1}}
+   \hfill\begin{minipage}[t]{0.66\textwidth}
+   \raggedright
+}
+{
+   \end{minipage}
+   \vspace*{\stretch{3}}
+   \clearpage
+}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Chapter quote at the start of chapter        %
+% Source: http://tex.stackexchange.com/a/53380 %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\makeatletter
+\renewcommand{\@chapapp}{}% Not necessary...
+\newenvironment{chapquote}[2][2em]
+  {\setlength{\@tempdima}{#1}%
+   \def\chapquote@author{#2}%
+   \parshape 1 \@tempdima \dimexpr\textwidth-2\@tempdima\relax%
+   \itshape}
+  {\par\normalfont\hfill--\ \chapquote@author\hspace*{\@tempdima}\par\bigskip}
+\makeatother
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% First page of book which contains 'stuff' like: %
+%  - Book title, subtitle                         %
+%  - Book author name                             %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% Book's title and subtitle
+\title{\Huge \textbf{Science}  \footnote{This is a $5^{th}$ class  science book.} \\ \huge Sample book subtitle \footnote{This is book is taught at KT Global School.}}
+% Author
+\author{\textsc{First-name Last-name}\thanks{\url{www.swayamjena.com}}}
+
+
+\begin{document}
+
+\frontmatter
+\maketitle
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Add a dedication paragraph to dedicate your book to someone %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{dedication}
+Dedicated to Baba.
+\end{dedication}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Auto-generated table of contents, list of figures and list of tables %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\tableofcontents
+\listoffigures
+\listoftables
+
+\mainmatter
+
+%%%%%%%%%%%
+% Preface %
+%%%%%%%%%%%
+\chapter*{Preface}
+to be filled
+
+\section*{Un-numbered sample section}
+to be filled
+
+\section*{Another sample section}
+to be filled
+
+\section*{Structure of book}
+% You might want to add short description about each chapter in this book.
+Each unit will focus on <SOMETHING>.
+
+\section*{About the companion website}
+The website\footnote{\url{https://github.com/swayam-jena/ScienceBook}} for this file contains:
+\begin{itemize}
+  \item A link to (freely downlodable) latest version of this document.
+  \item Link to download LaTeX source for this document.
+  \item Miscellaneous material (e.g. suggested readings etc).
+\end{itemize}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Give credit where credit is due. %
+% Say thanks!                      %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section*{Acknowledgements}
+\begin{itemize}
+\item A special word of thanks goes to Professor Knuth\footnote{\url{http://www-cs-faculty.stanford.edu/~uno/}} (for \TeX{}) and Leslie Lamport\footnote{\url{http://www.lamport.org/}} (for \LaTeX{}).
+\item I'll also like to thank Gummi\footnote{\url{http://gummi.midnightcoding.org/}} developers and LaTeXila\footnote{\url{http://projects.gnome.org/latexila/}} development team for their awesome \LaTeX{} editors.
+\item I'm deeply indebted my parents, colleagues and friends for their support and encouragement.
+\end{itemize}
+\mbox{}\\
+%\mbox{}\\
+\noindent Swayam Jena \\
+\noindent \url{http://www.swayamjena.com}
+
+%%%%%%%%%%%%%%%%
+% NEW CHAPTER! %
+%%%%%%%%%%%%%%%%
+\chapter{Dignity of Labour}
+
+\begin{chapquote}{Unknown author, \textit{Unknown source of this quote}}
+'Every occupation is important. Each occupation requires different skills and experience.'
+\end{chapquote}
+
+\section{Get Rolling}
+Name the occupation of people you see in images given below and answer the questions that follow\\
+\begin{enumerate}
+    \item Which of the above occupations would like to choose when you grow up and what factors would influence your choice?\\
+    \item Which occupations would you not choose? Give reasons for your answer.
+\end{enumerate}
+\section{Learning objectives}
+\begin{itemize}
+    \item to discuss that people do different types of work
+    \item to classify workers into different types
+    \item to recorgnize the importance of everyone's work and the dignity of labour
+    \item to analyse the reasons responsible for child labour    
+\end{itemize}
+
+%%%%%%%%%%%%%%%%
+% NEW CHAPTER! %
+%%%%%%%%%%%%%%%%
+\chapter{Food and Health}
+\begin{chapquote}{Unknown author, \textit{Unknown source of this quote}}
+'Role of nutrients, roughage and water in keeping healthy, communicable and non-communicable diseases, and prevention are treatment of diseases.'
+\end{chapquote}
+
+\section{Get rolling}
+Look at Riya and her freinds. can you tell who has healthy habits? Write Good for healthy habits and Bad for unhealthy ones in the spaces provided.
+\begin{itemize}
+    \item Riya loves to exercise everyday. \textcolor{green}{Good}
+    \item Rohan loves to eat burger and fried food daily. \textcolor{red}{Bad}
+    \item Sirman always uses handkerchief while sneezing. \textcolor{green}{Good}
+    \item Sia always forgets to cover her mouth while coughing. \textcolor{red}{Bad}
+    \item Ruhi loves to eat salad. \textcolor{green}{Good}
+\end{itemize}
+\section{Learning Objectives}
+\begin{itemize}
+    \item to recall the role of nutrients in the body
+    \item to explain a food pryamid
+    \item to discuss different deficiency diseases 
+    \item to differentiate between communicable and non-comminucable diseases
+\end{itemize}
+\section{\textcolor{red}{Nutrients in food}}
+We eat food to live and stay healthy. Food provides us with energy and helps in the growth, development and repair of the body. Food also protects us from various diseases. All these functions of food are possible due to the presence of \textcolor{red}{nutrients} in it.\\
+\par
+There are different types of nutrients, and they all have different 
+roles. Let us have a quick recap of nutrients and their roles.
+\subsection{\textcolor{orange}{Types of nutrients}}
+Nutrients from food, including carbohydrates in items like bread and rice, fat from  sources like nuts and olive oil, are vital for energy and organ protection. Protiens found in dairy products, fish and meat help in growth and body repair. Vitamins and minerals, obtained from fruits and vegetables, support overall health.
+\subsection{\textcolor{orange}{Roughage and Water}}
+In addition to the essential nutrients, we also require sufficient roughage and water in our diet. Roughage, derived from whole grains and fruits, aids digestion and prevents \textcolor{red}{constipation}. Water is important for temprature regulation, digestion, and transportation of nutrients in the body. Drinking enough water helps us stay hydrated, which is essential for the proper functioning of the body.
+
+\begin{figure}[h]
+    \centering
+    \includegraphics[scale=0.28]{image/food.jpeg}
+    \caption{Nutritious Food}
+    \label{fig:placeholder}
+\end{figure}
+\section{\textcolor{red}{Food Pyramid}}
+Dietary requirements vary from person to person. Every person has unique factors that influence his or her nutritional needs of a person are age, gender, activity level are health condition. \\
+\par
+
+A \textbf{food pyramid} is a visual representation of a balanced diet, showing the different food groups are their recommended quantities for healthy and balanced nutrition.\\
+\par
+A typical food pyramid consists of several horizontal sections of layers, with each layer representing a different food group.
+
+
+
+\end{document}
